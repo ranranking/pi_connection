@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, request, render_template, redirect, url_for, flash
 from werkzeug import secure_filename
-from flask_bootstrap import Bootstrap
+#from flask_bootstrap import Bootstrap
 import os
 from static.py.bibUtil import *
 
@@ -24,7 +24,7 @@ makePathExist('static/db')
 
 UPLOAD_FOLDER = '/tmp/'
 app = Flask(__name__)
-Bootstrap(app)
+#Bootstrap(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 SECRET_KEY = "stars_and_moon"
 DEBUG = True
